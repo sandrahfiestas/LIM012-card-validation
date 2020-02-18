@@ -7,7 +7,52 @@
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+      <h1 id="encabezado" align="center"> LetrasenLinea.com </h1>
+      <div id="cardInformation" align=center class="">
+        <h4>Permitanos validar su tarjeta <br> para <strong>continuar con la compra</strong></h4>
+
+        <form id="formulario" name="formulario">
+          <p><strong>Nombre Titular:</strong>
+            <input
+            type="text"
+            id="nombre"
+            placeholder="Titular"
+            name="nombre"
+            required
+            /></p>
+          <p><strong>Numero Tarjeta:</strong>
+            <input
+            type="text"
+            id="creditCardNumber"
+            placeholder="Digite número"
+            name="card"
+            maxlength="16"
+            pattern="[0-9]+"
+            /></p>
+            <br>
+        <button type="button" id="bValidar"><strong>VALIDAR</strong></button>
+        </div>
+        <p>
+        <div id="rValida" align=center class="">
+            <p id="tValida"><strong>**TARJETA VALIDA**</strong></p>
+              <input
+              type="text"
+              id="cardValida"
+              name="cardValida"
+              />
+
+        </div>
+        <div id="rInvalida" align=center class="">
+            <p id="tInvalida"><strong>**TARJETA INVALIDA**</strong></p>
+              <input
+              type="text"
+              id="cardInvalida"
+              name="cardInvalida"
+              />
+        </div>
+        </form>
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
