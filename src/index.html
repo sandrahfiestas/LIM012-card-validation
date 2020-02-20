@@ -4,24 +4,36 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header></header>
+
+    <header align=center class="headerLogo" >
+      <h1></h1>
+      <img src="logoL.jpg" alt="">
+    </header>
+
     <main>
-      <h1 id="encabezado" align="center"> LetrasenLinea.com </h1>
-      <div id="cardInformation" align=center class="">
-        <h4>Permitanos validar su tarjeta <br> para <strong>continuar con la compra</strong></h4>
+      <div id="" class="validatorTitle">
+      <h3 align="center" class="titulo">VALIDACION DE DATOS</h3>
+      </div>
+
+    <div id="" class="container">
+
+      <div id="cardInformation" class="">
+        <h4 align=center>Permitanos validar su tarjeta <br> para <strong>continuar con la compra</strong></h4>
 
         <form id="formulario" name="formulario">
-          <p><strong>Nombre Titular:</strong>
+          <p><strong>Nombre y Apellido : </strong>
             <input
             type="text"
             id="nombre"
-            placeholder="Titular"
+            placeholder="Nombre"
             name="nombre"
             required
-            /></p>
-          <p><strong>Numero Tarjeta:</strong>
+            />
+          </p>
+          <p><strong>Numero de Tarjeta  :</strong>
             <input
             type="text"
             id="creditCardNumber"
@@ -29,31 +41,68 @@
             name="card"
             maxlength="16"
             pattern="[0-9]+"
-            /></p>
+            />
+          </p>
+          <p><strong>Fecha de Expiración:</strong>
+            <input
+            type="date"
+            id="expirationDate"
+            placeholder=""
+            name=""
+            required
+            />
+          </p>
+          <p><strong>Codigo de Seguridad:</strong>
+            <input
+            type="text"
+            id="securityCode"
+            placeholder=""
+            name=""
+            required
+            />
+          </p>
             <br>
-        <button type="button" id="bValidar"><strong>VALIDAR</strong></button>
+            <br>
+            <button type="button" id="bValidar"><strong>VALIDAR</strong></button>
+            <button type="button" id="return"><strong>VOLVER</strong></button>
         </div>
-        <p>
-        <div id="rValida" align=center class="">
-            <p id="tValida"><strong>**TARJETA VALIDA**</strong></p>
+
+        <div id="instructions" align="center" class="">
+          <p></p>
+          <strong>INSTRUCCIONES<strong>
+          <br></br>
+          <img src="tc1.png" width="310" height="300" alt="">
+        </div>
+    </div>
+
+        <div id="validAnswer" align=center class="answer">
+            <p id=""><strong>**TARJETA VALIDA**</strong></p>
+            <p id="validNumber"></p>
               <input
               type="text"
-              id="cardValida"
-              name="cardValida"
+              id="rvalidNumber"
+              name="rvalidNumber"
               />
 
         </div>
-        <div id="rInvalida" align=center class="">
-            <p id="tInvalida"><strong>**TARJETA INVALIDA**</strong></p>
+        <div id="invalidAnswer" align=center class="answer">
+            <p id=""><strong>**TARJETA INVALIDA**</strong></p>
+            <p id="invalidNumber"></p>
               <input
               type="text"
-              id="cardInvalida"
-              name="cardInvalida"
+              id="rInvalidNumber"
+              name="rInvalidNumber"
               />
         </div>
         </form>
+
+
+
     </main>
-    <footer></footer>
+    <footer align=center class="footer">
+        Copyright © 2020 letrasenlinea.shfiestas - Todos los derechos reservados <br>
+        Aviso legal - Política de privacidad
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

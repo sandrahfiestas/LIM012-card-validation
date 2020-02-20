@@ -1,6 +1,6 @@
 const validator = {
 
-  isValid (creditCardNumber){
+  isValid (creditCardNumber,parrafo){
 
 // INVIERTE NUMERO
 const newArr = [];
@@ -9,7 +9,7 @@ for(let i= creditCardNumber.length-1; i >=0; i--){
   // console.log( parseInt( cardNumber[i] ) );
   newArr.push( parseInt( creditCardNumber[i] ) );
 }
-  console.log(newArr);
+  //console.log(newArr);
 
 //MULTIPLICAR lOS PARES
 let multiPar = [];
@@ -21,7 +21,7 @@ for(let i=0; i<newArr.length; ++i){
    multiPar.push(newArr[i]*1);
    }
 }
-console.log('Multi par: ' + multiPar);
+//console.log('Multi par: ' + multiPar);
 
 
 // SUMADO DOS DIGITOS
@@ -33,27 +33,31 @@ console.log('Multi par: ' + multiPar);
         else {
           sumPar.push(multiPar[i]*1);
         }
-        rValida.style.display = 'block';
+      //  validAnswer.style.display = 'block';
       }
-      console.log(sumPar);
+    //  console.log(sumPar);
       let sumArray = sumPar.reduce(function(a,b){
         return a+b;});
-        console.log('Suma Total:  '+sumArray);
+    //console.log('Suma Total:  '+sumArray);
 
 
         if(sumArray%10 ==0){
-          alert('numero valido');
+        //alert('numero valido');
+        validAnswer.style.display = 'block';
         }
         else{
-          alert('numero invalido');
+        //alert('numero invalido');
+        invalidAnswer.style.display = 'block';
         }
 }
   ,
   maskify (validMask){
     let paraMascara = validMask;
     let enmascarado = paraMascara.replace(/.(?=.{4,}$)/g, '#');
-    console.log(paraMascara);
-    console.log(enmascarado);
+    validNumber.innerHTML= enmascarado
+    invalidNumber.innerHTML=enmascarado
+    //console.log(paraMascara);
+    //console.log(enmascarado);
 
   }
 };
