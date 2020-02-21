@@ -1,21 +1,31 @@
 import validator from './validator.js';
 
+ let validAnswer = document.getElementById("validAnswer")
+ let invalidAnswer = document.getElementById("invalidAnswer")
  validAnswer.style.display = 'none';
  invalidAnswer.style.display = 'none';
 
+ let validNumber = document.getElementById("validNumber");
+ //let invalidNumber = document.getElementById("invalidNumber");
+
+
+
 document.getElementById("bValidar").addEventListener('click', () => {
 let valorIngresado = document.getElementById("creditCardNumber").value;
-let creditCardNumber = validator.isValid(valorIngresado);
+validator.isValid(valorIngresado);
 
 
-let validNumber = document.getElementById("validNumber");
-let invalidNumber = document.getElementById("invalidadNumber");
-let valor = document.getElementById("creditCardNumber").value;
-let validMask = validator.maskify(valor,validNumber,invalidNumber);
+//let valor = document.getElementById("creditCardNumber").value;
+validator.maskify(valorIngresado);
 
 
+let rvalidNumber = validator.isValid(valorIngresado);
+if (rvalidNumber===true){
+  validAnswer.style.display = 'none'
+}
 
+
+let masked = validator.maskify(valorIngresado);
+validNumber.innerHTML = masked;
 
 });
-
-console.log(validator);

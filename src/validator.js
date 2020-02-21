@@ -1,17 +1,13 @@
 const validator = {
 
-  isValid (creditCardNumber,parrafo){
+  isValid (creditCardNumber){
 
-// INVIERTE NUMERO
+// INVIERTE NUMEROS
 const newArr = [];
 for(let i= creditCardNumber.length-1; i >=0; i--){
-  // console.log( typeof cardNumber[i] );
-  // console.log( parseInt( cardNumber[i] ) );
   newArr.push( parseInt( creditCardNumber[i] ) );
 }
-  //console.log(newArr);
-
-//MULTIPLICAR lOS PARES
+// MULTIPLICA LAS POSICIONES PARES
 let multiPar = [];
 for(let i=0; i<newArr.length; ++i){
  if (i%2 !==0) {
@@ -21,10 +17,7 @@ for(let i=0; i<newArr.length; ++i){
    multiPar.push(newArr[i]*1);
    }
 }
-//console.log('Multi par: ' + multiPar);
-
-
-// SUMADO DOS DIGITOS
+// SUMA DOS DIGITOS
    let sumPar = [];
     for(let i=0; i<multiPar.length; ++i){
       if(parseInt(multiPar[i])>=10){
@@ -33,32 +26,22 @@ for(let i=0; i<newArr.length; ++i){
         else {
           sumPar.push(multiPar[i]*1);
         }
-      //  validAnswer.style.display = 'block';
       }
-    //  console.log(sumPar);
+// SUMA ARRAY
       let sumArray = sumPar.reduce(function(a,b){
         return a+b;});
-    //console.log('Suma Total:  '+sumArray);
-
-
+// MULTIPLO DE 10
+      let state = false;
         if(sumArray%10 ==0){
-        //alert('numero valido');
-        validAnswer.style.display = 'block';
+          state = true;
         }
-        else{
-        //alert('numero invalido');
-        invalidAnswer.style.display = 'block';
-        }
+        return state;
 }
   ,
-  maskify (validMask){
-    let paraMascara = validMask;
-    let enmascarado = paraMascara.replace(/.(?=.{4,}$)/g, '#');
-    validNumber.innerHTML= enmascarado
-    invalidNumber.innerHTML=enmascarado
-    //console.log(paraMascara);
-    //console.log(enmascarado);
-
+  maskify (valorIngresado){
+    let toMask = valorIngresado;
+    let masked = toMask.replace(/.(?=.{4,}$)/g, '#');
+    return masked
   }
 };
 

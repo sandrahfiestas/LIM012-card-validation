@@ -74,9 +74,12 @@ border-radius: 18px;
 }
 
 
-.answer{
-  background: #7AB3C6;
+#validAnswer{
+  background: #7AB3C6
+}
 
+.ocultar{
+  display: none;
 }
 
 .footer{

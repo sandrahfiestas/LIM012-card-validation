@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <header align=center class="headerLogo" >
+    <header align="center" class="headerLogo" >
       <h1></h1>
       <img src="logoL.jpg" alt="">
     </header>
@@ -20,9 +20,8 @@
 
     <div id="" class="container">
 
-      <div id="cardInformation" class="">
-        <h4 align=center>Permitanos validar su tarjeta <br> para <strong>continuar con la compra</strong></h4>
-
+       <div id="cardInformation" class="">
+        <h4 align="center">Permitanos validar su tarjeta <br> para <strong>continuar con la compra</strong></h4>
         <form id="formulario" name="formulario">
           <p><strong>Nombre y Apellido : </strong>
             <input
@@ -61,45 +60,42 @@
             required
             />
           </p>
-            <br>
-            <br>
-            <button type="button" id="bValidar"><strong>VALIDAR</strong></button>
-            <button type="button" id="return"><strong>VOLVER</strong></button>
-        </div>
+          <br>
+          <br>
+          <button type="button" id="bValidar"><strong>VALIDAR</strong></button>
+          <button type="button" id="return"><strong>VOLVER</strong></button>
 
-        <div id="instructions" align="center" class="">
+       </form>
+      </div>
+      <div id="instructions" align="center" class="">
           <p></p>
-          <strong>INSTRUCCIONES<strong>
-          <br></br>
+          <strong>INSTRUCCIONES</strong>
+          <br>
           <img src="tc1.png" width="310" height="300" alt="">
         </div>
     </div>
 
-        <div id="validAnswer" align=center class="answer">
-            <p id=""><strong>**TARJETA VALIDA**</strong></p>
-            <p id="validNumber"></p>
-              <input
-              type="text"
-              id="rvalidNumber"
-              name="rvalidNumber"
-              />
-
-        </div>
-        <div id="invalidAnswer" align=center class="answer">
-            <p id=""><strong>**TARJETA INVALIDA**</strong></p>
-            <p id="invalidNumber"></p>
-              <input
-              type="text"
-              id="rInvalidNumber"
-              name="rInvalidNumber"
-              />
-        </div>
-        </form>
-
-
-
+    <div id="validAnswer" align="center" class="ocultar">
+        <p id=""><strong>**TARJETA VALIDA**</strong></p>
+        <p id="validNumber"></p>
+          <input
+          type="text"
+          id="rvalidNumber"
+          name="rvalidNumber"
+          />
+    </div>
+    <div id="invalidAnswer" align="center" class="ocultar">
+        <p id=""><strong>**TARJETA INVALIDA**</strong></p>
+        <p id="invalidNumber"></p>
+          <input
+          type="text"
+          id="rInvalidNumber"
+          name="rInvalidNumber"
+          />
+    </div>
     </main>
-    <footer align=center class="footer">
+
+    <footer align="center" class="footer">
         Copyright © 2020 letrasenlinea.shfiestas - Todos los derechos reservados <br>
         Aviso legal - Política de privacidad
     </footer>
