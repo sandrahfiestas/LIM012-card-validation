@@ -17,7 +17,7 @@ LetrasEnLinea.com es una plataforma de ventas de libros online, ofrece un catalo
 
 La plataforma de validación cuenta con un area de Instrucciones en donde se detalla el correcto llenado de los datos. No obstante, los campos serán verificados mostrando mensajes y/o alertas que ayudaran al usuario a llenar el formulario de forma correcta antes del envio.
 
-![alt text](images/Validacion2.jpg)
+![Validando datos](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/Validacion2.jpg)
 
 ## 3. Investigación UX
 
@@ -41,11 +41,11 @@ Considerando que dentro del público objetivo habrían clientes familiarizados c
 
 ### iii. Primer prototipo (en papel)
 
-![alt text](images/Prototipo1Papel.jpg)
+![prototipo papel](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/PrototipoPapel.jpg)
 
 ### iv. Primer prototipo en figma
 
-![alt text](https://www.figma.com/proto/lMU5YQJu9f56xCd23O9W1O/ValidaTc?scaling=scale-down&node-id=4%3A2)
+![alt text](https://www.figma.com/file/lMU5YQJu9f56xCd23O9W1O/ValidaTc?node-id=0%3A1)
 
 ### v. Mejoras a realizar (feedback)
 
@@ -57,27 +57,27 @@ A continuación se mostrarán las pantallas de la Plataforma Web:
 
 * Pantalla Principal de LetrasEnLinea.com, mostrando galeria de fotos:
 
-![alt text](images/Portada.jpg)
+![Portada](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/Portada.jpg)
 
 
 * Pantalla mostrando el detalle del libro a comprar:
 
-![alt text](images/Detalle.jpg)
+![Detalle](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/Detalle.jpg)
 
 
 * Pantalla de Validación de datos:
 
-![alt text](images/Validacion.jpg)
+![Validacion](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/Validacion.jpg)
 
 
 * Mensaje de Tarjeta de Valida.
 
-![alt text](images/valido.jpg)
+![Valida](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/valido.jpg)
 
 
-* Mensaje de Tarjeta de Valida.
+* Mensaje de Tarjeta de Invalida.
 
-![alt text](images/invalido.jpg)
+![Invalida](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/invalido.jpg)
 
 
 ****
