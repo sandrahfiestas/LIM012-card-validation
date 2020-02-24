@@ -7,21 +7,77 @@
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
   </head>
   <body>
-
     <header align="center" class="headerLogo" >
       <h1></h1>
-      <img src="logoL.jpg" alt="">
+      <img src="images/logoL.jpg" alt="Logo" class="logo">
     </header>
 
-    <main>
-      <div id="" class="validatorTitle">
-      <h3 align="center" class="titulo">VALIDACION DE DATOS</h3>
+    <main id="homePage" class="hideAnswer">
+      <div class="containerHome">
+        <div class="item">
+          <img src="images/book1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img id="bookDetails" src="images/book2.png" alt="">
+        </div>
+        <div class="item">
+          <img src="images/book3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/book4.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/book5.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/book6.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/book7.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/book8.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/book9.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/book10.jpg" alt="">
+        </div>
       </div>
+    </main>
 
-    <div id="" class="container">
+    <main id="bookDetail" class="hideAnswer">
+      <div class="containerDetail">
+        <div align="center" class="books">
+          <img id="bookprice" src="images/book2.png" alt="">
+        </div>
+        <div align="center" class="books">
+          <p><h1 id="price" align="center">$36</h1></p>
+          <button id="evaluate"><strong>COMPRAR</strong></button>
+          <br>
+          <p><strong>Medios de Pago</strong></p>
+          <br>
+          <img src="images/pago.jpg" alt="">
+        </div>
+        <div class="detail">
+          <h1><strong>SINOPSIS</strong></h1>
+          <h4><strong>Una antología de cuentos seleccionados por la autora que bajo el seudonimo de JSNieves pone en nuestras manos historias ineditas, como lo detalló ella misma en su ultima presentación de firma de libros en la Ciudad de Nueva York:</strong>
+          </h4>
+          <h4><strong>"Permitanme narrarle algunos cuentos, combinar situaciones reales con un poco de imaginación, exponer nuestros miedos más ocultos o simplemente ver la realidad con otros ojos. Dicho esto, acompañenme en... Mis Noches de Cuentos".
+          </strong></h4>
+        </div>
+      </div>
+    </main>
 
-       <div id="cardInformation" class="">
+    <main id="pageValidateCard" class="hideAnswer">
+      <div id="container" class="container">
+      <div class="validatorTitle">
+            <h3 align="center" class="titulo">VALIDACION DE DATOS</h3>
+      </div>
+      <div id="cardInformation">
         <h4 align="center">Permitanos validar su tarjeta <br> para <strong>continuar con la compra</strong></h4>
+        <p id="alerta" align="center" class="hideAnswer">* Ingrese sus datos según las instrucciones</p>
         <form id="formulario" name="formulario">
           <p><strong>Nombre y Apellido : </strong>
             <input
@@ -29,6 +85,9 @@
             id="nombre"
             placeholder="Nombre"
             name="nombre"
+            class="text"
+            autofocus="autofocus"
+            autocomplete="off"
             required
             />
           </p>
@@ -39,7 +98,8 @@
             placeholder="Digite número"
             name="card"
             maxlength="16"
-            pattern="[0-9]+"
+            class="text"
+            required
             />
           </p>
           <p><strong>Fecha de Expiración:</strong>
@@ -48,6 +108,7 @@
             id="expirationDate"
             placeholder=""
             name=""
+            class="text"
             required
             />
           </p>
@@ -55,49 +116,58 @@
             <input
             type="text"
             id="securityCode"
-            placeholder=""
+            placeholder="CVV"
             name=""
+            maxlength="3"
+            class="text"
+            autocomplete="off"
             required
             />
           </p>
           <br>
           <br>
-          <button type="button" id="bValidar"><strong>VALIDAR</strong></button>
-          <button type="button" id="return"><strong>VOLVER</strong></button>
+          <button type="submit" id="bValidar"><strong>VALIDAR</strong></button>
 
-       </form>
-      </div>
-      <div id="instructions" align="center" class="">
-          <p></p>
-          <strong>INSTRUCCIONES</strong>
+          <button type="reset"><strong>BORRAR</strong></button>
           <br>
-          <img src="tc1.png" width="310" height="300" alt="">
-        </div>
-    </div>
+          <button id="backHomepage">PAGINA PRINCIPAL</button>
 
-    <div id="validAnswer" align="center" class="ocultar">
-        <p id=""><strong>**TARJETA VALIDA**</strong></p>
-        <p id="validNumber"></p>
-          <input
-          type="text"
-          id="rvalidNumber"
-          name="rvalidNumber"
-          />
-    </div>
-    <div id="invalidAnswer" align="center" class="ocultar">
-        <p id=""><strong>**TARJETA INVALIDA**</strong></p>
-        <p id="invalidNumber"></p>
-          <input
-          type="text"
-          id="rInvalidNumber"
-          name="rInvalidNumber"
-          />
+        </form>
+      </div>
+      <div id="instructions" align="center">
+            <p></p>
+            <strong>INSTRUCCIONES</strong>
+            <br>
+            <img id="stepOne" src="images/tc1.png" width="210" height="200" alt="" >
+            <img id="stepTwo" src="images/tc2.png" width="210" height="200" alt="" >
+            <img id="stepThree" src="images/tc3.png" width="210" height="200" alt="" >
+      </div>
+
     </div>
     </main>
 
+    <main  align="center" id="resulPage" class="hideAnswer">
+      <div class="containerResult">
+      <div id="validAnswer" align="" class="answer">
+            <img src="images/valid.png" alt="" class="ima">
+            <p class="messageValid"><strong>**TARJETA VALIDA**</strong></p>
+            <p class="result" id="validNumber"></p>
+            <button id="msgValidHome">CANCELAR</button>
+            <button id="continue">CONTINUAR COMPRA</button>
+      </div>
+      <div id="invalidAnswer" align="" class="answer">
+            <img src="images/invalid.jpg" alt="" class="ima">
+            <p class="messageInvalid"><strong>**TARJETA INVALIDA**</strong></p>
+            <p class="result" id="invalidNumber"></p>
+            <button id="msgInvalidBack">VOLVER</button>
+            <button id="msgInvalidHome">PAGINA PRINCIPAL</button>
+      </div>
+    </div>
+    </main>
+    
+    <br>
     <footer align="center" class="footer">
-        Copyright © 2020 letrasenlinea.shfiestas - Todos los derechos reservados <br>
-        Aviso legal - Política de privacidad
+        <h4>Copyright © 2020 letrasenlinea.shfiestas - Todos los derechos reservados.</h4>
     </footer>
     <script src="index.js" type="module"></script>
   </body>

@@ -36,8 +36,7 @@ for(let i=0; i<newArr.length; ++i){
           state = true;
         }
         return state;
-}
-  ,
+},
   maskify (valorIngresado){
     let toMask = valorIngresado;
     let masked = toMask.replace(/.(?=.{4,}$)/g, '#');
@@ -46,5 +45,3 @@ for(let i=0; i<newArr.length; ++i){
 };
 
 export default validator;
-
-//tc valida 4083952015263

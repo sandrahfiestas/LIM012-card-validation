@@ -1,45 +1,86 @@
-# Tarjeta de crédito válida
+# Plataforma de compras online con Tarjeta de crédito.
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Consideraciones técnicas](#6-consideraciones-técnicas)
-* [7. Pistas, tips y lecturas complementarias](#7-pistas-tips-y-lecturas-complementarias)
+* [1. Resumen del Proyecto](#1-resumen-del-proyecto)
+* [2. Imagen del Proyecto](#2-imagen-del-proyecto)
+* [3. Investigación UX](#3-investigacion-ux)
 
 ***
 
-## 1. Preámbulo
+## 1. Resumen del Proyecto
 
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
-también llamado algoritmo de módulo 10, es un método de suma de verificación,
-se utiliza para validar números de identificación; tales como el IMEI de los
-celulares, tarjetas de crédito, etc.
+LetrasEnLinea.com es una plataforma de ventas de libros online, ofrece un catalogo de productos, asi como la validación de datos de los usuarios antes de concretar su compra, brindando seguridad y confianza.
 
-Este algoritmo es simple. Obtenemos la reversa del número a verificar (que
-solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
-par se les debe multiplicar por dos, si este número es mayor o igual a 10,
-debemos sumar los dígitos del resultado; el número a verificar será válido si
-la suma de sus dígitos finales es un múltiplo de 10.
 
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+## 2. Imagen del Proyecto
 
-## 2. Resumen del proyecto
+La plataforma de validación cuenta con un area de Instrucciones en donde se detalla el correcto llenado de los datos. No obstante, los campos serán verificados mostrando mensajes y/o alertas que ayudaran al usuario a llenar el formulario de forma correcta antes del envio.
 
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
-los últimos cuatro.
+![alt text](images/Validacion2.jpg)
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
+## 3. Investigación UX
 
-## 3. Objetivos de aprendizaje
+### i. Describiendo quiénes son los usuarios y objetivos en relación con el producto.
+
+Los principales usuarios del produto son:
+
+* Administrador y/o dueño de la tienda online.
+* Personas que posean una tarjeta de crédito como medio de pago.
+
+Los objetivos de los usuarios mencionados en relación con el producto:
+
+* El Administrador y/o dueño es tener una interfaz optima que le permita ofrecer sus productos (libros) y que estos sean vendidos con seguridad y garantía.
+* Las personas cuyo medio de pago es con tarjeta de crédito, encuentren una interfaz que le permita de manera amigable, rápida y segura realizar sus compras.
+
+### ii. Explicando cómo el producto soluciona los problemas/necesidades de dichos usuarios.
+
+Siendo indispensable en contar con una herramienta online que permita optimizar procesos, con la presente plataforma la tienda obtendría mejores ingresos.
+
+Considerando que dentro del público objetivo habrían clientes familiarizados con este tipo de compras y así como personas que utilicen por primera vez una tarjeta o mayores de edad, todos ellos encontraran en la plataforma  una guia interactiva que origine facilidad y buena experiencia.
+
+### iii. Primer prototipo (en papel)
+
+![alt text](images/Prototipo1Papel.jpg)
+
+### iv. Primer prototipo en figma
+
+![alt text](https://www.figma.com/proto/lMU5YQJu9f56xCd23O9W1O/ValidaTc?scaling=scale-down&node-id=4%3A2)
+
+### v. Mejoras a realizar (feedback)
+
+* El prototipo inicial consta de 4 pantallas. Siendo la tercera en donde se validan los datos, es ahí en donde se implementaron dos pantallas adicionales para mostrar los mensajes de "Tarjeta Valida" y "Tarjeta Invalida", para mejor visualización en interacción con el usuario.
+
+### vi. Imagen del prototipo final
+
+A continuación se mostrarán las pantallas de la Plataforma Web:
+
+* Pantalla Principal de LetrasEnLinea.com, mostrando galeria de fotos:
+
+![alt text](images/Portada.jpg)
+
+
+* Pantalla mostrando el detalle del libro a comprar:
+
+![alt text](images/Detalle.jpg)
+
+
+* Pantalla de Validación de datos:
+
+![alt text](images/Validacion.jpg)
+
+
+* Mensaje de Tarjeta de Valida.
+
+![alt text](images/valido.jpg)
+
+
+* Mensaje de Tarjeta de Valida.
+
+![alt text](images/invalido.jpg)
+
+
+****
 
 El objetivo principal de aprendizaje es adquirir experiencia desarrollando
 aplicaciones web (WebApp) que interactúen con el usuario a través del navegador
@@ -50,46 +91,46 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y
 
 ### UX
 
-* [ ] [Diseñar la aplicación pensando y entendiendo al usuario](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/intro-ux/01-el-proceso-de-diseno/00-el-proceso-de-diseno)
-* [ ] [Crear prototipos para obtener feedback e iterar](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/00-sketching/00-sketching)
-* [ ] [Aplicar los principios de diseño visual](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/01-visual-design/01-visual-design-basics)
+* [✔] [Diseñar la aplicación pensando y entendiendo al usuario](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/intro-ux/01-el-proceso-de-diseno/00-el-proceso-de-diseno)
+* [✔] [Crear prototipos para obtener feedback e iterar](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/00-sketching/00-sketching)
+* [✔] [Aplicar los principios de diseño visual](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/01-visual-design/01-visual-design-basics)
 
 ### HTML y CSS
 
-* [ ] [Uso correcto de HTML semántico](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] [Uso de selectores de CSS](https://developer.mozilla.org/es/docs/Web/CSS/Selectores_CSS)
-* [ ] [Construir tu aplicación respetando el diseño realizado](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/css/01-css/02-boxmodel-and-display) (maquetación).
+* [✔] [Uso correcto de HTML semántico](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+* [✔] [Uso de selectores de CSS](https://developer.mozilla.org/es/docs/Web/CSS/Selectores_CSS)
+* [✔] [Construir tu aplicación respetando el diseño realizado](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/css/01-css/02-boxmodel-and-display) (maquetación).
 
 ### DOM
 
-* [ ] [Uso de selectores de nodos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/03-1-dom-methods-selection)
-* [ ] [Manejo de eventos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/04-events)
-* [ ] [Manipulación dinámica del DOM](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
+* [✔] [Uso de selectores de nodos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/03-1-dom-methods-selection)
+* [✔] [Manejo de eventos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/04-events)
+* [✔] [Manipulación dinámica del DOM](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
 
 ### Javascript
 
-* [ ] [Manipulación de strings](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/06-strings/01-strings)
-* [ ] [Uso de condicionales](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/01-conditionals-and-loops)
-* [ ] [Uso de bucles](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/02-loops)
-* [ ] [Uso de funciones](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/javascript/02-flow-control/03-functions)
-* [ ] [Datos atómicos y estructurados](https://www.todojs.com/tipos-datos-javascript-es6/)
-* [ ] Utilizar ES Modules (`import` | `export`).
+* [✔] [Manipulación de strings](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/06-strings/01-strings)
+* [✔] [Uso de condicionales](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/01-conditionals-and-loops)
+* [✔] [Uso de bucles](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/02-loops)
+* [✔] [Uso de funciones](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/javascript/02-flow-control/03-functions)
+* [✔] [Datos atómicos y estructurados](https://www.todojs.com/tipos-datos-javascript-es6/)
+* [✔] Utilizar ES Modules (`import` | `export`).
 
 ### Testing
 
-* [ ] [Testeo de tus funciones](https://jestjs.io/docs/es-ES/getting-started)
+* [✔] [Testeo de tus funciones](https://jestjs.io/docs/es-ES/getting-started)
 
 ### Git y GitHub
 
-* [ ] [Comandos de git](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/01-git/04-commands)
+* [✔] [Comandos de git](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/01-git/04-commands)
   (`add` | `commit` | `pull` | `status` | `push`).
-* [ ] [Manejo de repositorios de GitHub](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/02-github/01-github)  (`clone` | `fork` | `gh-pages`).
+* [✔] [Manejo de repositorios de GitHub](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/02-github/01-github)  (`clone` | `fork` | `gh-pages`).
 
 ### Buenas prácticas de desarrollo
 
-* [ ] Organizar y dividir el código en módulos (Modularización).
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica).
-* [ ] Uso de linter para seguir buenas prácticas (ESLINT).
+* [✔] Organizar y dividir el código en módulos (Modularización).
+* [✔] Uso de identificadores descriptivos (Nomenclatura | Semántica).
+* [✔] Uso de linter para seguir buenas prácticas (ESLINT).
 
 ## 4. Consideraciones generales
 
