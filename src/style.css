@@ -219,6 +219,20 @@ border-radius: 18px;
   font-size: 20px;
 }
 
+#bookSold{
+  width: 75%;
+  max-width: 500px;
+  margin: 5em auto;
+  padding: 10px;
+  border-radius: 5px;
+  background: #f2f2f2;
+}
+
+#imaSold{
+  width: 250px;
+  height: 400px;
+}
+
 
 .footer{
  height: 3em;

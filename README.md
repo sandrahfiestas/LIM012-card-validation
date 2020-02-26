@@ -10,12 +10,12 @@
 
 ## 1. Resumen del Proyecto
 
-LetrasEnLinea.com es una plataforma de ventas de libros online, ofrece un catalogo de productos, asi como la validación de datos de los usuarios antes de concretar su compra, brindando seguridad y confianza.
+LetrasEnLinea.com es una plataforma de ventas de libros online, ofrece un cátalogo de productos, así como la validación de datos de los usuarios antes de concretar su compra, brindando seguridad y confianza.
 
 
 ## 2. Imagen del Proyecto
 
-La plataforma de validación cuenta con un area de Instrucciones en donde se detalla el correcto llenado de los datos. No obstante, los campos serán verificados mostrando mensajes y/o alertas que ayudaran al usuario a llenar el formulario de forma correcta antes del envio.
+La plataforma de validación cuenta con un área de Instrucciones en donde se detalla el correcto llenado de los datos. No obstante, los campos serán verificados mostrando mensajes y/o alertas que ayudarán al usuario a llenar el formulario de forma correcta antes del envío.
 
 ![Validando datos](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/Validacion2.jpg)
 
@@ -23,7 +23,7 @@ La plataforma de validación cuenta con un area de Instrucciones en donde se det
 
 ### i. Describiendo quiénes son los usuarios y objetivos en relación con el producto.
 
-Los principales usuarios del produto son:
+Los principales usuarios del producto son:
 
 * Administrador y/o dueño de la tienda online.
 * Personas que posean una tarjeta de crédito como medio de pago.
@@ -37,7 +37,7 @@ Los objetivos de los usuarios mencionados en relación con el producto:
 
 Siendo indispensable en contar con una herramienta online que permita optimizar procesos, con la presente plataforma la tienda obtendría mejores ingresos.
 
-Considerando que dentro del público objetivo habrían clientes familiarizados con este tipo de compras y así como personas que utilicen por primera vez una tarjeta o mayores de edad, todos ellos encontraran en la plataforma  una guia interactiva que origine facilidad y buena experiencia.
+Considerando que dentro del público objetivo habrían clientes familiarizados con este tipo de compras y así como personas que utilicen por primera vez una tarjeta o mayores de edad, todos ellos encontraran en la plataforma una guía interactiva que origine facilidad y buena experiencia.
 
 ### iii. Primer prototipo (en papel)
 
@@ -45,7 +45,7 @@ Considerando que dentro del público objetivo habrían clientes familiarizados c
 
 ### iv. Primer prototipo en figma
 
-![alt text](https://www.figma.com/file/lMU5YQJu9f56xCd23O9W1O/ValidaTc?node-id=0%3A1)
+![alt text](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/figma.jpg)
 
 ### v. Mejoras a realizar (feedback)
 
@@ -55,29 +55,35 @@ Considerando que dentro del público objetivo habrían clientes familiarizados c
 
 A continuación se mostrarán las pantallas de la Plataforma Web:
 
-* Pantalla Principal de LetrasEnLinea.com, mostrando galeria de fotos:
+* **Pantalla Principal** de LetrasEnLinea.com, muestra una galería de libros, en donde el cliente puede cliquear sobre el libro a comprar.
 
 ![Portada](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/Portada.jpg)
 
 
-* Pantalla mostrando el detalle del libro a comprar:
+* Pantalla donde se muestra el **detalle del libro** (Sinopsis, precio, medios de pago y el botón de compra):
 
 ![Detalle](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/Detalle.jpg)
 
 
-* Pantalla de Validación de datos:
+* Cuando el usuario de click en el botón de compra, se le pedirá **Validar sus Datos** antes de seguir con el proceso.
 
 ![Validacion](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/Validacion.jpg)
 
 
-* Mensaje de Tarjeta de Valida.
+* Si el usuario ingresa un número de tarjeta incorrecto entonces se mostrará **Mensaje de Tarjeta Invalida**. Dando opción al usuario de volver a la pantalla anterior y corregir el error o volver a la Pagina Principal.
+
+![Invalida](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/invalido.jpg)
+
+
+* Si el usuario ingresa sus datos correctamente se mostrará un **Mensaje de Tarjeta de Valida**. Dando opción de cancelar la compra o continuar con la misma.
 
 ![Valida](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/valido.jpg)
 
 
-* Mensaje de Tarjeta de Invalida.
+* Si el usuario elige continuar con la compra, el proceso culminará, mostrándole una ventana de **Agradeciemto por su compra**
 
-![Invalida](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/invalido.jpg)
+![Valida](https://github.com/sandrahfiestas/LIM012-card-validation/blob/master/src/images/Agradecimiento.jpg)
+
 
 
 ****
@@ -91,27 +97,27 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y
 
 ### UX
 
-* [✔] [Diseñar la aplicación pensando y entendiendo al usuario](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/intro-ux/01-el-proceso-de-diseno/00-el-proceso-de-diseno)
-* [✔] [Crear prototipos para obtener feedback e iterar](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/00-sketching/00-sketching)
+* [✔✔] [Diseñar la aplicación pensando y entendiendo al usuario](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/intro-ux/01-el-proceso-de-diseno/00-el-proceso-de-diseno)
+* [✔✔] [Crear prototipos para obtener feedback e iterar](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/00-sketching/00-sketching)
 * [✔] [Aplicar los principios de diseño visual](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/01-visual-design/01-visual-design-basics)
 
 ### HTML y CSS
 
-* [✔] [Uso correcto de HTML semántico](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+* [✔✔] [Uso correcto de HTML semántico](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
 * [✔] [Uso de selectores de CSS](https://developer.mozilla.org/es/docs/Web/CSS/Selectores_CSS)
-* [✔] [Construir tu aplicación respetando el diseño realizado](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/css/01-css/02-boxmodel-and-display) (maquetación).
+* [✔✔] [Construir tu aplicación respetando el diseño realizado](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/css/01-css/02-boxmodel-and-display) (maquetación).
 
 ### DOM
 
-* [✔] [Uso de selectores de nodos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/03-1-dom-methods-selection)
-* [✔] [Manejo de eventos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/04-events)
+* [✔✔] [Uso de selectores de nodos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/03-1-dom-methods-selection)
+* [✔✔] [Manejo de eventos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/04-events)
 * [✔] [Manipulación dinámica del DOM](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
 
 ### Javascript
 
-* [✔] [Manipulación de strings](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/06-strings/01-strings)
-* [✔] [Uso de condicionales](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/01-conditionals-and-loops)
-* [✔] [Uso de bucles](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/02-loops)
+* [✔✔] [Manipulación de strings](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/06-strings/01-strings)
+* [✔✔] [Uso de condicionales](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/01-conditionals-and-loops)
+* [✔✔] [Uso de bucles](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/02-loops)
 * [✔] [Uso de funciones](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/javascript/02-flow-control/03-functions)
 * [✔] [Datos atómicos y estructurados](https://www.todojs.com/tipos-datos-javascript-es6/)
 * [✔] Utilizar ES Modules (`import` | `export`).

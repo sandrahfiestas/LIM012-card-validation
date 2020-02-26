@@ -14,6 +14,8 @@ import validator from './validator.js';
  let invalidNumber = document.getElementById("invalidNumber");
  let alerta = document.getElementById("alerta");
 
+ let bookSold =document.getElementById("bookSold");
+
 document.getElementById("bookDetails").addEventListener('click',()=>{
   homePage.classList.add("hideAnswer");
   bookDetail.classList.remove("hideAnswer");
@@ -41,6 +43,16 @@ document.getElementById("msgInvalidBack").addEventListener('click',()=>{
 
 document.getElementById("msgInvalidHome").addEventListener('click',()=>{
   invalidAnswer.classList.add("hideAnswer");
+  homePage.classList.remove("hideAnswer");
+});
+
+document.getElementById("continue").addEventListener('click',()=>{
+  validAnswer.classList.add("hideAnswer");
+  bookSold.classList.remove("hideAnswer");
+})
+
+document.getElementById("btnSold").addEventListener('click',()=>{
+  bookSold.classList.add("hideAnswer");
   homePage.classList.remove("hideAnswer");
 });
 
